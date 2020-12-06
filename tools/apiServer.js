@@ -1,15 +1,3 @@
-/*
-This uses json-server, but with the module approach: https://github.com/typicode/json-server#module
-Downside: You can't pass the json-server command line options.
-Instead, can override some defaults by passing a config object to jsonServer.defaults();
-You have to check the source code to set some items.
-Examples:
-Validation/Customization: https://github.com/typicode/json-server/issues/266
-Delay: https://github.com/typicode/json-server/issues/534
-ID: https://github.com/typicode/json-server/issues/613#issuecomment-325393041
-Relevant source code: https://github.com/typicode/json-server/blob/master/src/cli/run.js
-*/
-
 /* eslint-disable no-console */
 const jsonServer = require("json-server");
 const server = jsonServer.create();

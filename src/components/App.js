@@ -1,16 +1,14 @@
 import React from 'react';
-import HomePage from "./HomePage";
-import AboutPage from "./AboutPage";
+import NotFoundPage from "./NotFoundPage";
 import Header from "./common/Header";
-import MovPage from "./MovPage";
+import MoviesPage from "./MoviesPage";
 
 
 function App() {
     function getPage() {
         const route = window.location.pathname;
-        if(route==="/about") return <AboutPage />;
-        if(route==="/movies") return <MovPage />;
-        return <HomePage />
+        if(route==="/movies") return <MoviesPage />;
+        return <NotFoundPage />
     }
     return(
         <div className="container-fluid">
